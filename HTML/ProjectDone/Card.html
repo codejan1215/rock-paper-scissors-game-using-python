@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Profile Card</title>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body {
+                    background-color: #f0f4f8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: roboto, Arial;
+                    min-height: 100vh;
+                }
+
+                .card {
+                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+                    border-radius: 20px;
+                    background-color: #ffffff;
+                    text-align: center;
+                    padding: 40px 32px;
+                    width: 320px;
+                }
+
+                .avatar {
+                    width: 130px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-bottom: 16px;
+                }
+
+                .name {
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+
+                .work {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #6c63ff;
+                    margin-bottom: 10px;
+                }
+
+                .description {
+                    font-size: 14px;
+                    color: #555;
+                    line-height: 1.6;
+                    margin-bottom: 15px;
+                }
+
+                .links {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: row;
+                }
+
+                .github, .twitter, .portfolio {
+                    text-decoration: none;
+                    font-size: 13px;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    background-color: #f0eeff;
+                    color: #6c63ff;
+                    border: none;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: background-color 0.2s;
+                }
+
+                .github:hover, .twitter:hover, .portfolio:hover {
+                    background-color: #6c63ff;
+                    color:#ffffff;
+                }
+
+                .github:active, .twitter:active, .portfolio:active {
+                    background-color: #ffffff;
+                    color:#6c63ff;
+                }
+
+                .follow {
+                    font-size: 13px;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    background-color: #6c63ff;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    transition: background-color 0.2s, transform 0.3s;
+                }
+
+                .follow:hover {
+                    background-color: #292929;
+                    transform: scale(1.03)
+                }
+
+                .follow:active {
+                    background-color: #ffffff;
+                    color: #6c63ff;
+                    transform: scale(1)
+                }
+
+            </style>
+        </head>
+
+        <body>
+            <div class="card">
+                <div class="image">
+                    <img src="/HTML/image/avatar.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="text">
+                    <p class="name">Jan Naybe</p>
+                    <p class="work">UI/UX Designer</p>
+                    <p class="description">Hello! I design clean and user-friendly interfaces. I love coffee, creativity, and clean code.</p>
+                </div>
+            
+                <div class="links">
+                    <a href="https://github.com/codejan1215" class="github">GitHub</a>
+                    <a href="https://x.com/" class="twitter">Twitter</a>
+                    <a href="#" class="portfolio">Portfolio</a>
+                </div>
+                <button class="follow">Follow</button>
+            </div>
+        </body>
+    </html>

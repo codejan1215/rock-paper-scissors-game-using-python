@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>YouTube.com</title>
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+            <style> 
+                .whole-youtube {
+                    font-family: 'Roboto', sans-serif;
+                    padding-top: 57px;
+                    padding-left: 72px;
+                    background-color: rgb(249, 249, 249);
+                }
+
+                * {
+                    box-sizing: border-box;
+                }
+                .header {
+                    display: flex;
+                    height: 57px;
+                    border-bottom: 1px solid rgb(222, 222, 222);
+                    margin-bottom: 20px;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: white;
+                    z-index: 100;
+                }
+
+                header {
+                    unicode-bidi: isolate;
+                }
+
+                .left-section {
+                    display: flex;
+                    align-items: center;
+                }
+
+                * {
+                    box-sizing: border-box;
+                }
+
+                div {
+                    unicode-bidi: isolate;
+                }
+
+                .YouTube-logo {
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    display: block;
+                    height: 20px;
+                    overflow-clip-margin: content-box;
+                    overflow-x: clip;
+                    overflow-y: clip;
+                    width: 90px;
+                }
+
+                .Options-menu {
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    display: block;
+                    height: 24px;
+                    margin-left: 24px;
+                    margin-right: 24px;
+                    overflow-clip-margin: content-box;
+                    overflow-x: clip;
+                    overflow-y: clip;
+                    width: 24px;
+                }
+
+                .search-bar {
+                    font-family: Roboto, Arial, sans-serif;
+                    height: 40px;
+                    flex: 1;
+                    width: 0;
+                    min-width: 0;
+                    padding-left: 12px;
+                    font-size: 16px;
+                    -webkit-font-smoothing: antialiased;
+                    border: 1px solid rgb(204, 204, 204);
+                    border-top-left-radius: 2px;
+                    border-bottom-left-radius: 2px;
+                    box-shadow: inset 0px 1px 2px rgb(238, 238, 238);
+                }
+
+                .search-button {
+                    height: 40px;
+                    width: 64px;
+                    border: 1px solid rgb(204, 204, 204);
+                    border-left: none;
+                    border-top-right-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    background-color: rgb(247, 247, 247);
+                    cursor: pointer;
+                    margin-right: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            </style>
+        </head>
+
+        <body>
+            <div class="whole-youtube">
+                <header class="header">
+                    <div class="left-section">
+                        <img src="/HTML/image/download (1).jpg" alt="YouTube Logo" class="YouTube-logo">
+
+                    <img src="/HTML/image/Black and Purple Illustrative Beauty and Nail Art Studio Logo.png" alt="Option Menu" class="Options-menu">
+                    </div>
+                    
+                    <div class="middle-section">
+                        <input type="text" class="search-bar" placeholder="Search">
+                        <button class="search-button tooltip-container">
+                            <img src="/HTML/image/search.png">
+                            <div class="tooltip">Search</div>
+                        </button>
+                        <button class="voice-search tooltip-container">
+                            <img src="/HTML/image/voice-search.png">
+                            <div class="tooltip">Search with your voice</div>
+                        </button>
+                    </div>
+
+                    <div class="right-section">
+                        
+                    </div>
+                </header>
+                <nav class="sidebar">
+
+                </nav>
+                <main class="main-content">
+                    
+                </main>
+            </div>
+        </body>
+    </html>
